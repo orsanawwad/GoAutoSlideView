@@ -90,7 +90,7 @@
 
 - (void)onTimerFired{
     CGPoint newOffset = CGPointMake(self.scrollView.contentOffset.x + CGRectGetWidth(self.bounds), self.scrollView.contentOffset.y);
-    [self.scrollView setContentOffset:newOffset animated:NO];
+    [self.scrollView setContentOffset:newOffset animated:YES];
 }
 
 - (void)resetSubViewsFrame{
